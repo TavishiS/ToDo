@@ -154,8 +154,8 @@ def profile():
 @login_required
 def logout():
     logout_user()
-    # return redirect(url_for('home_guest'))
-    return redirect('/about_guest')
+    return redirect(url_for('home_guest'))
+    # return redirect('/about_guest')
 
 if __name__ == '__main__':
     app.run(debug=True)

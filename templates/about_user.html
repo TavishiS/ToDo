@@ -17,6 +17,7 @@
                 <li><a href="/create" class="nav-link {% if request.path == '/create' %}active{% endif %}">Add ToDos</a></li>
                 <li><a href="/profile" class="nav-link {% if request.path == '/profile' %}active{% endif %}">My Profile</a></li>
             </ul>
+            <!-- this works for flask login -->
             {% if current_user.is_authenticated %}
                 <a href="{{ url_for('logout') }}" class="btn btn-primary">Logout</a>
             {% endif %}
